@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Rana Helal | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
             <a href="#intro">
-                <h1>RANA ESMAIL</h1>
+                <h1>RANA HELAL</h1>
             </a>
         </div>
         <nav>
@@ -18,7 +21,8 @@
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about" id="about-link">About Me</a></li>
                 <li><a href="#skills">My Skills</a></li>
-                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
@@ -29,8 +33,9 @@
     <section id="intro">
         <div class="intro-grid">
             <div class="intro-name">
-                <h1>HEY, I'M RANA ESMAIL</h1>
-                <p>Mobile App Developer || Artificial Intelligence student at Cairo University</p>
+                <h1>HEY, I'M RANA HELAL</h1>
+                <p>AI & Machine Learning Engineer</p>
+                <a href="Rana-Helal.pdf" class="cv-download-btn" download>Download CV</a>
             </div>
         </div>
     </section>
@@ -39,186 +44,387 @@
         <div class="about-cover">
             <h2>About Me</h2>
             <div class="about-text">
-                <p>I’m <strong>Rana Esmail</strong>, a Senior Computer Science student specializing in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>, with strong skills in Computer Vision and Mobile App Development using Flutter.</p>
-                <p>I have practical experience designing and implementing intelligent AI systems, leveraging frameworks like TensorFlow and PyTorch, and applying <strong>Clean Architecture</strong> and <strong>SOLID principles</strong> to build scalable, maintainable applications.</p>
-                <p>My passion lies in bridging the gap between advanced AI models and real-world user applications, delivering effective solutions that combine innovation with usability.</p>
+                <p><strong>AI Systems Engineer</strong> with hands-on experience in building production-grade <strong>LLM systems</strong>, retrieval-augmented applications, and scalable AI pipelines. Experienced in designing backend-integrated AI solutions including fine-tuning, inference optimization, and graph-based recommendation systems.</p>
+                <p>Proficient across the full ML lifecycle — from data processing and model fine-tuning (LoRA/QLoRA, SFTTrainer) to deployment with <strong>FastAPI</strong>, <strong>ONNX</strong> quantization, and GPU-optimized inference. Strong background in <strong>NLP</strong>, <strong>Computer Vision</strong>, and building end-to-end AI-powered applications.</p>
+                <p>Currently studying at Cairo University's Faculty of Computers and Artificial Intelligence, with a GPA of 3.66.</p>
             </div>
         </div>
     </section>
 
 
-   <section id="skills">
-    <h2>My Skills</h2>
-        <div class="skill-card">
-    <h3>Machine Learning & Data Science</h3>
-    <div class="skill-icons">
-      <div class="skill-icon">
-        <img src="images/ml-algorithms-icon.png" alt="Machine Learning Algorithms" />
-        <p>Machine Learning Algorithms</p>
-      </div>
-      <div class="skill-icon">
-        <img src="images/deep-learning-icon.png" alt="Deep Learning" />
-        <p>Deep Learning (CNN, ResNet, DenseNet)</p>
-      </div>
-      <div class="skill-icon">
-        <img src="images/nlp-icon.png" alt="NLP" />
-        <p>Natural Language Processing (NLP)</p>
-      </div>
-      <div class="skill-icon">
-        <img src="images/computer-vision-icon.png" alt="Computer Vision" />
-        <p>Computer Vision & Image Classification</p>
-      </div>
-    </div>
-  </div>
+            <section id="skills">
+        <h2>My Skills</h2>
 
-        <div class="skill-card">
-            <h3>Web Technologies</h3>
-            <div class="skill-icons">
-
-                <div class="skill-icon">
-                    <img src="images/js-logo.svg" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/html5-logo.svg" alt="HTML5">
-                    <p>HTML5</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/css3-logo.svg" alt="CSS3">
-                    <p>CSS3</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/Sass-logo.svg" alt="Sass">
-                    <p>Sass</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/django-logo.svg" alt="Django">
-                    <p>Django</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/spring-boot-logo.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-            </div>
+        <div class="skills-tabs">
+            <button class="skills-tab active" data-tab="ai">ML &amp; AI</button>
+            <button class="skills-tab" data-tab="backend">Backend</button>
+            <button class="skills-tab" data-tab="languages">Languages</button>
+            <button class="skills-tab" data-tab="cloud">Cloud &amp; DB</button>
+            <button class="skills-tab" data-tab="mobile">Mobile &amp; Web</button>
         </div>
 
-        <div class="skill-card">
-            <h3>Programming Languages</h3>
-            <div class="skill-icons">
-                <div class="skill-icon">
-                    <img src="images/python-logo.svg" alt="Python">
-                    <p>Python</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/java-logo.svg" alt="Java">
-                    <p>Java</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/cpp-logo.svg" alt="C++">
-                    <p>C++</p>
-                </div>
-            </div>
+        <div class="skills-panel active" data-panel="ai">
+            <span class="skill-chip">Machine Learning</span>
+            <span class="skill-chip">Deep Learning (CNN, ResNet)</span>
+            <span class="skill-chip">NLP &amp; Text Classification</span>
+            <span class="skill-chip">Computer Vision</span>
+            <span class="skill-chip">LLM Fine-tuning (LoRA / QLoRA)</span>
+            <span class="skill-chip">RAG &amp; Agentic Systems</span>
+            <span class="skill-chip">Model Evaluation &amp; Optimization</span>
+            <span class="skill-chip">TensorFlow &amp; PyTorch</span>
         </div>
 
-        <div class="skill-card">
-            <h3>Databases</h3>
-            <div class="skill-icons">
-                <div class="skill-icon">
-                    <img src="images/sqlserver-logo.svg" alt="Microsoft SQL Server">
-                    <p>Microsoft SQL Server</p>
-                </div>
-            </div>
+        <div class="skills-panel" data-panel="backend">
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">NestJS</span>
+            <span class="skill-chip">Django</span>
+            <span class="skill-chip">Spring Boot</span>
+            <span class="skill-chip">Firebase</span>
+            <span class="skill-chip">REST APIs</span>
         </div>
 
-        <div class="skill-card">
-            <h3>Mobile Technologies</h3>
-            <div class="skill-icons">
-                <div class="skill-icon">
-                    <img src="images/dart-logo.svg" alt="Dart">
-                    <p>Dart</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/kotlin-logo.svg" alt="Kotlin">
-                    <p>Kotlin</p>
-                </div>
-                <div class="skill-icon">
-                    <img src="images/flutter-logo.svg" alt="Flutter">
-                    <p>Flutter</p>
-                </div>
-            </div>
+        <div class="skills-panel" data-panel="languages">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Dart</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">Kotlin</span>
         </div>
-   </section>
+
+        <div class="skills-panel" data-panel="cloud">
+            <span class="skill-chip">AWS (S3, SageMaker)</span>
+            <span class="skill-chip">Microsoft SQL Server</span>
+            <span class="skill-chip">Vector Databases</span>
+            <span class="skill-chip">PostgreSQL</span>
+        </div>
+
+        <div class="skills-panel" data-panel="mobile">
+            <span class="skill-chip">Flutter</span>
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3 / Sass</span>
+            <span class="skill-chip">Kotlin (Android)</span>
+            <span class="skill-chip">Clean Architecture</span>
+            <span class="skill-chip">MVVM &amp; SOLID</span>
+        </div>
+    </section>
     <section id="experience">
-    <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Artificial Intelligence and Data Engineer Intern</h3>
-            <h4>MasteryHub ITS</h4>
-            <p>August 2025 - Present · On-site</p>
-            <p>Gaining hands-on experience in AI and data engineering through real-world projects, involving data processing, model development, and deployment.</p>
-        </div>
-
+        <h2>Experience</h2>
 
         <div class="experience-item">
-            <h3>Computer Vision Intern – AI Summer Internship Program</h3>
-            <h4>National Telecommunication Institute (NTI)</h4>
-            <p><em>July 2025 – Present</em></p>
-            <p>Currently enrolled in a 90-hour internship focused on computer vision and deep learning. Gaining hands-on experience implementing CNNs, ResNet, DenseNet for image classification. Applying transfer learning, feature extraction, and face recognition techniques in practical scenarios.</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>AI Trainee</h3>
-            <h4>NTI - Huawei Egyptian Talents Academy</h4>
-            <p><em>April 2025 – July 2025 | Cairo</em></p>
-            <p>Trained in Python, mathematics for AI, data analysis, machine learning, and deep learning. Studied official Huawei Academy content and passed internal exams toward certification.</p>
+            <div class="exp-header">
+                <div>
+                    <h3>Artificial Intelligence Engineer</h3>
+                    <h4>MasteryHub ITS · Cairo, Egypt</h4>
+                </div>
+                <span class="exp-date">Jan 2026 – Present</span>
+            </div>
+            <ul>
+                <li>Developed and deployed LLM-powered AI systems with optimized inference</li>
+                <li>Built scalable FastAPI backend services and reliable AI pipelines</li>
+            </ul>
         </div>
 
         <div class="experience-item">
-            <h3>Mobile Application Developer Intern</h3>
-            <h4>Digital Egypt Pioneers Initiative</h4>
-            <p>April 2024 – October 2024</p>
-            <p>Cairo, Egypt</p>
-            <a href="https://depi.gov.eg/" target="_blank">Visit DEPI</a>
-            <p>Developed mobile applications using Kotlin, Java, and Flutter, focusing on Android development and SOLID principles for scalable code, along with various design patterns to enhance application architecture.</p>
+            <div class="exp-header">
+                <div>
+                    <h3>Artificial Intelligence Intern</h3>
+                    <h4>MasteryHub ITS · Cairo, Egypt</h4>
+                </div>
+                <span class="exp-date">Aug 2025 – Dec 2025</span>
+            </div>
+            <ul>
+                <li>Developed and integrated AI solutions across multiple projects based on business requirements, including NLP and computer vision tasks</li>
+            </ul>
         </div>
-</section>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <h3>AI Developer Intern</h3>
+                    <h4>Datalentech · Cairo, Egypt</h4>
+                </div>
+                <span class="exp-date">Mar 2026 – Apr 2026</span>
+            </div>
+            <ul>
+                <li>Built an embedding-based recommendation system with scalable FastAPI architecture and dynamic skill taxonomy design for personalized AI/ML learning paths</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <h3>Computer Vision Intern – AI Summer Internship Program</h3>
+                    <h4>National Telecommunication Institute (NTI) · Cairo, Egypt</h4>
+                </div>
+                <span class="exp-date">Jul 2025 – Aug 2025</span>
+            </div>
+            <ul>
+                <li>Implemented CNNs, ResNet, and DenseNet for image classification</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <h3>AI Trainee</h3>
+                    <h4>NTI – Huawei Egyptian Talents Academy · Cairo, Egypt</h4>
+                </div>
+                <span class="exp-date">Apr 2025 – Jul 2025</span>
+            </div>
+            <ul>
+                <li>Trained in Python, data analysis, machine learning, and deep learning</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <h3>Mobile Application Developer Intern</h3>
+                    <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
+                </div>
+                <span class="exp-date">Apr 2024 – Oct 2024</span>
+            </div>
+            <ul>
+                <li>Developed mobile applications using Kotlin, Java, and Flutter, focusing on Android development and SOLID principles</li>
+                <li>Applied various design patterns to enhance application architecture</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="experience-item education-item">
+            <div class="exp-header">
+                <div>
+                    <h3>Bachelor's Degree in Computer Science &amp; Artificial Intelligence</h3>
+                    <h4>Cairo University · Faculty of Computers and Artificial Intelligence</h4>
+                    <p class="edu-meta">GPA: <strong>3.66</strong></p>
+                    <p class="edu-courses">Relevant Coursework: Data Structures, Software Development, Algorithms, Machine Learning</p>
+                </div>
+                <span class="exp-date">Oct 2022 – Jul 2026</span>
+            </div>
+        </div>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
 
         <div class="project-gallery">
-            <div class="project-card" id="iSUPPLY-Order-Tracker-App">
-                <div class="project-images" style="display: flex; gap: 10px; margin-bottom: 15px;">
-                    <img src="images/projects/iSUPPLY-thumbnail1.jpeg" alt="iSUPPLY Order Tracker App 1" style="width: 50%; height: auto; border-radius: 5px;">
-                    <img src="images/projects/iSUPPLY-thumbnail2.jpeg" alt="iSUPPLY Order Tracker App 2" style="width: 50%; height: auto; border-radius: 5px;">
+
+            <div class="project-card" id="Synthetic-Speech-Data-Pipeline">
+                <img src="images/projects/speech-dashboard.png" alt="Speech Data Pipeline Dashboard">
+                <div class="project-info">
+                    <h3>Synthetic Speech Data Pipeline</h3>
+                    <p class="proj-date">May 2026</p>
+                    <p>A production-grade pipeline for generating, validating, and synthesizing high-quality Egyptian Arabic speech datasets for TTS model training.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, LLMs (Gemini/Groq), edge-tts, Streamlit</p>
+                    <ul>
+                        <li><strong>Text Generation:</strong> Uses Gemini/Groq LLMs for conversational Egyptian Arabic text</li>
+                        <li><strong>Dialect Refinement:</strong> AI-powered dialect validation and correction</li>
+                        <li><strong>Audio Synthesis:</strong> edge-tts for natural-sounding speech generation</li>
+                        <li><strong>Quality Validation:</strong> Automated audio quality checks and human review dashboard</li>
+                        <li><strong>Streamlit Dashboard:</strong> Interactive review and dataset export interface</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/SyntheticSpeechDataPipeline" target="_blank">View Code</a>
                 </div>
+            </div>
+
+            <div class="project-card" id="Graph-Recommendation">
+                <img src="images/skill-recommend.png" alt="Graph-Based Learning Recommendation">
+                <div class="project-info">
+                    <h3>Graph-Based Learning Recommendation System</h3>
+                    <p class="proj-date">Mar 2026 – Apr 2026</p>
+                    <p>Personalized learning path engine using graph algorithms and embedding-based ranking for skill-sequence generation.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, FastAPI, Embedding Models, Graph Algorithms</p>
+                    <ul>
+                        <li><strong>Graph Algorithms:</strong> DFS and topological sorting for structured skill sequences from prerequisite graphs</li>
+                        <li><strong>Embedding Ranking:</strong> Cosine similarity, skill weights, and content quality scoring for personalization</li>
+                        <li><strong>Dynamic Pipeline:</strong> External content fetching and database expansion for up-to-date resources</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" id="Presentation-Agent">
+                <img src="images/projects/presentation-agent-home.png" alt="Presentation Agent Home">
+                <div class="project-info">
+                    <h3>Presentation Agent</h3>
+                    <p class="proj-date">Mar 2026</p>
+                    <p>AI-powered system that transforms static pitch decks into dynamic, interactive presentations using Gemini and RAG.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, LangChain, RAG, Gemini, React, TTS</p>
+                    <ul>
+                        <li><strong>Interactive RAG:</strong> Ask questions and get dynamically generated slides and audio</li>
+                        <li><strong>Brand Guide Support:</strong> Upload a PDF to align all generated content with your brand identity</li>
+                        <li><strong>Deep Knowledge:</strong> Ingest technical PDFs into a Chroma vector store for grounded responses</li>
+                        <li><strong>Multimodal Output:</strong> React slides, speaker notes, and TTS audio generation</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/presentation-agent" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="SpeakOut-AI">
+                <img src="images/noimage.jpg" alt="SpeakOut AI Content Moderation">
+                <div class="project-info">
+                    <h3>SpeakOut — AI Content Moderation System</h3>
+                    <p class="proj-date">Dec 2025 – Present</p>
+                    <p>Production-grade LLM-powered content moderation system with LoRA fine-tuning, ONNX quantization, and high-throughput batch inference.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, LLM (LoRA/QLoRA), ONNX, FastAPI</p>
+                    <ul>
+                        <li><strong>LLM Fine-tuning:</strong> SFTTrainer with LoRA, 4-bit quantization and mixed precision (FP16/BF16)</li>
+                        <li><strong>ONNX Inference:</strong> INT8-quantized local model for real-time user feedback (~0.13–0.15s/post)</li>
+                        <li><strong>GPU Management:</strong> Cron-based scheduling with queue-driven activation to reduce idle compute</li>
+                        <li><strong>Batch Processing:</strong> High-throughput pipeline handling up to 100 posts per batch</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" id="Brainlight">
+                <img src="images/projects/autimate-landing.jpg" alt="Autimate Landing">
+                <div class="project-info">
+                    <h3>BrainLight — Autism Support Platform</h3>
+                    <p class="proj-date">Oct 2025</p>
+                    <p>An AI-powered mobile platform for autistic children, featuring emotion detection, AR interactions, chatbot, and therapeutic games. Built with Flutter frontend and FastAPI backend with ONNX model inference.</p>
+                    <ul>
+                        <li><strong>Emotion Detection:</strong> Real-time facial emotion recognition using Swin Transformer (ONNX)</li>
+                        <li><strong>AR Interaction:</strong> Augmented reality activities for engaging therapy</li>
+                        <li><strong>AI Chatbot:</strong> Conversational assistant for children and parents</li>
+                        <li><strong>Therapeutic Games:</strong> Memory games, emotion games, and interactive levels</li>
+                        <li><strong>Reports & Analytics:</strong> Track progress with detailed reports for therapists and doctors</li>
+                        <li><strong>Bilingual:</strong> Full Arabic and English support</li>
+                    </ul>
+                    <p><strong>Tech Stack:</strong> Flutter, FastAPI, PostgreSQL, ONNX Runtime, Swin Transformer, Hugging Face</p>
+                    <a href="https://landing.autiamte.site/" target="_blank">Live Site</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Diabetes-AI-Agent">
+                <img src="images/noimage.jpg" alt="AI Agent for Diabetes Diagnosis">
+                <div class="project-info">
+                    <h3>AI Agent for Diabetes Diagnosis</h3>
+                    <p class="proj-date">Sep 2025</p>
+                    <p>Medical AI agent built by fine-tuning LLaMA and BioGPT on a custom dataset, deployed via FastAPI and Gradio.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, LLaMA, BioGPT, FastAPI, Gradio</p>
+                    <ul>
+                        <li><strong>Model Fine-tuning:</strong> LLaMA and BioGPT on a custom medical diabetes dataset</li>
+                        <li><strong>Deployment:</strong> FastAPI backend with Gradio interface for interactive diagnosis</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/AI-Agent-Diabetes-Diagnosis" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Resume-Builder">
+                <img src="images/projects/resume-builder-register.png" alt="Resume Builder Register">
+                <div class="project-info">
+                    <h3>AI-Powered Resume Builder</h3>
+                    <p class="proj-date">Aug 2025</p>
+                    <p>A full-stack resume builder application with AI-powered summary enhancement, PDF export, and dark theme UI. Built with React frontend and NestJS backend.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> React, NestJS, TypeScript, JWT, Python</p>
+                    <ul>
+                        <li><strong>User Authentication:</strong> JWT token-based auth with secure registration/login</li>
+                        <li><strong>Resume Management:</strong> Create, edit, and manage multiple resumes with dynamic sections</li>
+                        <li><strong>AI Enhancement:</strong> One-click AI-powered summary optimization</li>
+                        <li><strong>Export Options:</strong> Export as PDF with professional design or JSON for portability</li>
+                        <li><strong>Dark Theme UI:</strong> Modern responsive design with glowing box shadows and animations</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/resume-builder-frontend" target="_blank">Frontend Code</a> | <a href="https://github.com/ranaehelal/resume-builder-backend" target="_blank">Backend Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Spring-React-Todo-List">
+                <img src="images/projects/todolist-login.png" alt="Todo List Login">
+                <div class="project-info">
+                    <h3>Spring-React Todo List</h3>
+                    <p class="proj-date">Aug 2025</p>
+                    <p>A full-stack web application for managing personal tasks and to-dos. Built with Spring Boot backend and React frontend, featuring user authentication, task management, and filtering capabilities.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Spring Boot (Java), React (JavaScript), PostgreSQL</p>
+                    <ul>
+                        <li><strong>User Authentication:</strong> Secure registration, login, and password reset functionality</li>
+                        <li><strong>Task Management:</strong> Create, read, update, and delete tasks</li>
+                        <li><strong>Task Filtering:</strong> Filter tasks by categories (All, Important, Work, Personal)</li>
+                        <li><strong>Responsive Design:</strong> Clean and intuitive user interface</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/spring-react-todolist" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="AI-Virtual-Keyboard">
+                <img src="images/noimage.jpg" alt="AI Virtual Keyboard">
+                <div class="project-info">
+                    <h3>AI Virtual Keyboard</h3>
+                    <p class="proj-date">Aug 2025</p>
+                    <p>A computer vision-powered virtual keyboard that lets you type using only hand gestures! No physical keyboard required – just point and "click" with your fingers in the air.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, OpenCV, MediaPipe</p>
+                    <ul>
+                        <li><strong>Gesture-Based Typing:</strong> Type by pointing your index finger at virtual keys</li>
+                        <li><strong>Air Clicking:</strong> "Click" keys by bringing your index and middle fingers together</li>
+                        <li><strong>Real-Time Hand Tracking:</strong> Uses MediaPipe for accurate hand detection</li>
+                        <li><strong>Audio Feedback:</strong> Satisfying click sounds for better user experience</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/AI_Virtual_Keyboard" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Fake-News-Classifier">
+                <img src="images/projects/FakeNewsClassifier-thumbnail.png" alt="Fake News Classifier">
+                <div class="project-info">
+                    <h3>Fake News Classifier</h3>
+                    <p class="proj-date">Jul 2025</p>
+                    <p>An end-to-end Fake News Detection System combining Machine Learning and Deep Learning techniques with a FastAPI backend and Flutter mobile frontend.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, FastAPI, Flutter (Dart), LSTM, TF-IDF</p>
+                    <ul>
+                        <li><strong>Machine Learning:</strong> Logistic Regression with TF-IDF</li>
+                        <li><strong>Deep Learning:</strong> LSTM with embedding and padding</li>
+                        <li><strong>API:</strong> FastAPI backend serving prediction endpoints</li>
+                        <li><strong>Mobile App:</strong> Flutter frontend with real-time prediction display</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/fake_news_classifier" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Toxic-Comment-Classifier">
+                <img src="images/projects/toxic-comment-ui.png" alt="Toxic Comment Classifier UI">
+                <div class="project-info">
+                    <h3>Toxic Comment Classifier</h3>
+                    <p class="proj-date">Jul 2025</p>
+                    <p>A machine learning system for detecting toxic comments using LSTM neural networks with FastAPI backend and React frontend.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, FastAPI, React, LSTM, TensorFlow</p>
+                    <ul>
+                        <li><strong>Multi-label Classification:</strong> Detects 6 types of toxicity (toxic, severe toxic, obscene, threat, insult, identity hate)</li>
+                        <li><strong>REST API:</strong> FastAPI backend for real-time predictions</li>
+                        <li><strong>Interactive Frontend:</strong> React web interface with visualization</li>
+                        <li><strong>Batch Processing:</strong> Analyze multiple comments at once</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/toxic-comment-detector" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="iSUPPLY-Order-Tracker-App">
+                <img src="images/projects/iSUPPLY-thumbnail1.jpeg" alt="iSUPPLY Order Tracker App">
                 <div class="project-info">
                     <h3>iSUPPLY Order Tracker App (Flutter + Firebase)</h3>
-                    <p>This is a Flutter-based order tracking system built for iSUPPLY B2B pharmacy. It allows users to track their orders through push notifications and a dynamic visual timeline.</p>
+                    <p class="proj-date">Jun 2025</p>
+                    <p>Flutter-based order tracking system for iSUPPLY B2B pharmacy with real-time push notifications and a dynamic visual timeline.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Flutter, Firebase (FCM, Firestore), Provider, MVVM</p>
                     <ul>
                         <li><strong>Real-time push notifications:</strong> Using Firebase Cloud Messaging (FCM)</li>
-                        <li><strong>Works in all app states:</strong> Foreground, Background, and Terminated</li>
-                        <li><strong>Visual progress timeline:</strong> Status updates</li>
-                        <li><strong>Firestore-backed order updates</strong></li>
-                        <li><strong>Local notifications</strong> for instant feedback</li>
-                        <li><strong>Supports reset & cancel actions</strong> for demo purposes</li>
-                        <li><strong>MVVM architecture</strong> with clean code separation</li>
-                        <li><strong>Branded UI</strong> with iSUPPLY style</li>
+                        <li><strong>Visual progress timeline:</strong> Order updates with push notifications in all app states</li>
+                        <li><strong>Firestore-backed:</strong> Real-time order sync and status management</li>
+                        <li><strong>MVVM architecture:</strong> Clean code separation for maintainability</li>
                     </ul>
-                    <p><strong>Tech Stack:</strong> Flutter, Firebase (Messaging, Firestore), Provider, Flutter Local Notifications, Google Fonts, Clean Architecture (MVVM)</p>
-                    <p><strong>Order Flow:</strong> Pending → Confirmed → Shipped → Delivered (with push notifications and UI updates)</p>
-                    <p><strong>Notification Behavior:</strong> Local notifications in foreground, system notifications in background and terminated states.</p>
-                    <p><strong>Demo Video:</strong> <a href="https://youtu.be/your-demo-video-link" target="_blank">Watch Demo</a></p>
                     <a href="https://github.com/ranaehelal/i_supply_order_tracker" target="_blank">View Code</a>
                 </div>
             </div>
 
             <div class="project-card" id="Movie-Review-Sentiment-Analysis">
-                <div class="project-image-placeholder" style="width: 415px; height: 250px; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #666; font-style: italic;">
-                    <img src="images/noimage.jpg" alt="Supermarket DataStructure">
+                <div class="project-image-placeholder">
+                    <img src="images/noimage.jpg" alt="Movie Review Sentiment">
                 </div>
                 <div class="project-info">
                     <h3>Movie Review Sentiment Analysis</h3>
+                    <p class="proj-date">Feb 2025</p>
                     <p>This project uses an LSTM model to predict whether a movie review is Positive or Negative, based on the IMDB 50K Dataset.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, LSTM, TensorFlow/Keras, IMDB Dataset</p>
                     <ul>
                         <li>Loads 50,000 movie reviews.</li>
                         <li>Cleans and preprocesses the text.</li>
@@ -232,28 +438,29 @@
                 </div>
             </div>
 
-            <div class="project-card" id="Fake-News-Classifier">
-                <div class="project-images" style="display: flex; gap: 10px;">
-                    <img src="images/projects/FakeNewsClassifier-thumbnail.png" alt="Fake News Classifier 1" style="width: 50%; height: auto;">
-                    <img src="images/projects/FakeNewsClassifier-thumbnail2.png" alt="Fake News Classifier 2" style="width: 50%; height: auto;">
-                </div>
+            <div class="project-card" id="Android-Learning-App">
+                <img src="images/projects/AndroidLearningApp-thumbnail.png" alt="Android Learning App">
                 <div class="project-info">
-                    <h3>Fake News Classifier</h3>
-                    <p>An end-to-end Fake News Detection System combining Machine Learning and Deep Learning techniques with a FastAPI backend and Flutter mobile frontend.</p>
+                    <h3>Android Learning App</h3>
+                    <p class="proj-date">Oct 2024</p>
+                    <p>A simple Android app designed for children to learn colors and family members through interactive buttons. Each button plays a sound, enhancing the learning experience.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Java, Android SDK</p>
                     <ul>
-                        <li><strong>Machine Learning:</strong> Logistic Regression with TF-IDF</li>
-                        <li><strong>Deep Learning:</strong> LSTM with embedding and padding</li>
-                        <li><strong>API:</strong> FastAPI backend serving prediction endpoints</li>
-                        <li><strong>Mobile App:</strong> Flutter frontend with real-time prediction display</li>
+                        <li><strong>Interactive Buttons:</strong> Sounds related to colors and family members.</li>
+                        <li><strong>Family Learning:</strong> Includes images and names.</li>
+                        <li><strong>Modern Design:</strong> Edge-to-edge design for a contemporary look.</li>
                     </ul>
-                    <a href="https://github.com/ranaehelal/fake_news_classifier" target="_blank">View Code</a>
+                    <a href="https://github.com/ranaehelal/Android_learning_app" target="_blank">View Code</a>
                 </div>
             </div>
+
             <div class="project-card" id="Mahatatty">
-                <img src="images/projects/Mahatatty-thumbnail.png" alt="Mahatatty" style="width: 415px; height: auto;">
+                <img src="images/projects/Mahatatty-thumbnail.png" alt="Mahatatty">
                 <div class="project-info">
                     <h3>Mahatatty (محطتي)</h3>
+                    <p class="proj-date">Sep 2024</p>
                     <p>A cross-platform mobile application for train booking and ticket management in Egypt, providing users with a convenient and efficient way to search, book, and pay for train tickets.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Flutter (Dart), Firebase</p>
                     <ul>
                         <li><strong>User Authentication:</strong> Secure sign-up/login with email or Google, password reset options, and session management.</li>
                         <li><strong>Flexible Booking:</strong> Supports one-way and round-trip bookings, including date selection, departure/arrival stations, and class choice.</li>
@@ -264,87 +471,31 @@
                     <a href="https://github.com/ranaehelal/Mahatatty" target="_blank">View Code</a>
                 </div>
             </div>
-            <div class="project-card" id="Android-Learning-App">
-                <img src="images/projects/AndroidLearningApp-thumbnail.png" alt="Android Learning App" style="width: 415px; height: auto;">
-                <div class="project-info">
-                    <h3>Android Learning App</h3>
-                    <p>A simple Android app designed for children to learn colors and family members through interactive buttons. Each button plays a sound, enhancing the learning experience.</p>
-                    <ul>
-                        <li><strong>Interactive Buttons:</strong> Sounds related to colors and family members.</li>
-                        <li><strong>Family Learning:</strong> Includes images and names.</li>
-                        <li><strong>Modern Design:</strong> Edge-to-edge design for a contemporary look.</li>
-                    </ul>
-                    <a href="https://github.com/ranaehelal/Android_learning_app" target="_blank">View Code</a>
-                </div>
-            </div>
 
             <div class="project-card" id="Flutter-ToDo-App">
-                <img src="images/projects/todo.png" alt="Flutter To-Do App" style="width: 200px; height: auto;">
-                <img src="images/projects/ToDoApp-thumbnail2.png" alt="Flutter To-Do App" style="width: 200px; height: auto;">
-
+                <img src="images/projects/todo.png" alt="Flutter To-Do App">
                 <div class="project-info">
                     <h3>Flutter To-Do App</h3>
-                    <p>This project is a Flutter-based To-Do Task Manager app, designed to provide users with an
-                        efficient task management experience. It includes a smooth splash screen, secure user
-                        authentication with login and signup functionality, and a comprehensive Terms & Services
-                        section. Users can easily create, view, and delete tasks, ensuring a simple yet powerful way to
-                        manage daily tasks.</p>
+                    <p class="proj-date">Sep 2024</p>
+                    <p>Flutter-based To-Do app with splash screen, user authentication, and full task management (CRUD).</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Flutter (Dart)</p>
                     <ul>
-                        <li>Splash Screen with smooth transition to the login page</li>
-                        <li>Login and Signup forms with custom validation</li>
-                        <li>Task management: Create, view, and delete tasks</li>
-                        <li>Terms & Services section for app terms and conditions</li>
-                        <li>Customizable light theme with personalized styling</li>
-                        <li>Custom image assets for buttons and UI elements</li>
+                        <li>Splash screen with smooth transition to login</li>
+                        <li>User authentication with signup, login, and validation</li>
+                        <li>Create, view, and delete tasks with persistent storage</li>
+                        <li>Terms & Services section and customizable light theme</li>
                     </ul>
                     <a href="https://github.com/ranaehelal/ToDo_Application" target="_blank">View Code</a>
                 </div>
             </div>
-            <div class="project-card" id="Portfolio">
-                <img src="images/projects/Portfolio-thumbnail.PNG" alt="Portfolio">
-                <div class="project-info">
-                    <h3>Portfolio</h3>
-                    <p>A personal portfolio showcasing my projects, skills, and experience in coding, web, and mobile application development.</p>
-                    <ul>
-                        <li>Built using HTML, CSS, JavaScript, and Django</li>
-                        <li>Responsive design for optimal viewing on all devices</li>
-                    </ul>
-                    <a href="https://github.com/ranaehelal/MyPortfolio" target="_blank">View Code</a>
-                </div>
-            </div>
-            <div class="project-card" id="Online Library Website">
-                <img src="images/projects/OnlineLibraryWebsite-thumbnail.PNG" alt="Online Library Website">
-                <div class="project-info">
-                    <h3>Online Library Website</h3>
-                    <p>Developed an interactive online library that allows users to search for books, return, and borrow books in real-time. Built using HTML, CSS, JavaScript, Django, and AJAX for dynamic content updates.</p>
-                    <ul>
-                        <li>Real-time book borrowing/returning with AJAX</li>
-                        <li>User authentication and role management (Admin/User)</li>
-                        <li>Responsive design for optimal viewing on all devices</li>
-                    </ul>
-                    <a href="https://github.com/ranaehelal/web_project" target="_blank">View Code</a>
-                </div>
-            </div>
-            <div class="project-card" id="University Library Management System">
-                <img src="images/projects/UniversityLibraryManagementSystem-thumbnail.PNG" alt="University Library Management System">
-                <div class="project-info">
-                    <h3>University Library Management System</h3>
-                    <p>Developed a comprehensive desktop application to manage a university library using Microsoft SQL Server and Python. The system supports user registration, book borrowing/returning, and more.</p>
-                    <ul>
-                        <li>User Roles: Students and Admins with distinct permissions</li>
-                        <li>Admin Capabilities: Add, update, and manage books and orders</li>
-                        <li>Student Features: Search for books, borrow, return, and update personal details</li>
-                        <li>Database Management: Efficiently handles large volumes of data with Microsoft SQL Server</li>
-                        <li>Graphical User Interface: Intuitive and user-friendly interface developed with Python</li>
-                    </ul>
-                    <a href="https://github.com/ranaehelal/DataBaseProject" target="_blank">View Code</a>
-                </div>
-            </div>
+
             <div class="project-card" id="Three Games">
                 <img src="images/projects/ThreeGames-thumbnail.png" alt="Desktop Application: Three Games">
                 <div class="project-info">
                     <h3>Desktop Application: Three Games</h3>
+                    <p class="proj-date">Jul 2024</p>
                     <p>Developed a desktop application featuring three games.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> C++, OOP, GUI</p>
                     <ul>
                         <li>Game 1: Pyramic Tic-Tac-Toe</li>
                         <li>Game 2: Four-in-a-Row</li>
@@ -355,19 +506,14 @@
                     <a href="https://github.com/ranaehelal/ThreeGames" target="_blank">View Code</a>
                 </div>
             </div>
-            <div class="project-card" id="Machine Simulator">
-                <img src="images/noimage.jpg" alt="Machine Simulator">
-                <div class="project-info">
-                    <h3>Machine Simulator</h3>
-                    <p>Developed a machine simulator using Object-Oriented Programming concepts and C++. Processes hexadecimal instructions.</p>
-                    <a href="https://github.com/ranaehelal/MachineLanguageSimulator" target="_blank">View Code</a>
-                </div>
-            </div>
+
             <div class="project-card" id="Supermarket Online">
                 <img src="images/noimage.jpg" alt="Supermarket DataStructure">
                 <div class="project-info">
                     <h3>Supermarket Online System</h3>
+                    <p class="proj-date">May 2024</p>
                     <p>Utilizes BST, Min/Max Heaps, and AVL Trees to allow users to store items online from a supermarket.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> C++, Data Structures (BST, Heap, AVL)</p>
                     <ul>
                         <li>Allows users to add, remove, and display items sorted by name or price.</li>
                         <li>Supports manual input or reading item data from a file.</li>
@@ -376,36 +522,86 @@
                     <a href="https://github.com/ranaehelal/SuperMarket-Ordering-System" target="_blank">View Code</a>
                 </div>
             </div>
+
+            <div class="project-card" id="DataBaseProject">
+                <img src="images/projects/UniversityLibraryManagementSystem-thumbnail.PNG" alt="University Library Management System">
+                <div class="project-info">
+                    <h3>University Library Management System</h3>
+                    <p class="proj-date">May 2024</p>
+                    <p>Developed a comprehensive desktop application to manage a university library using Microsoft SQL Server and Python. The system supports user registration, book borrowing/returning, and more.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, Microsoft SQL Server, GUI</p>
+                    <ul>
+                        <li>User Roles: Students and Admins with distinct permissions</li>
+                        <li>Admin Capabilities: Add, update, and manage books and orders</li>
+                        <li>Student Features: Search for books, borrow, return, and update personal details</li>
+                        <li>Database Management: Efficiently handles large volumes of data with Microsoft SQL Server</li>
+                        <li>Graphical User Interface: Intuitive and user-friendly interface developed with Python</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/DataBaseProject" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Machine Simulator">
+                <img src="images/noimage.jpg" alt="Machine Simulator">
+                <div class="project-info">
+                    <h3>Machine Simulator</h3>
+                    <p class="proj-date">Apr 2024</p>
+                    <p>Developed a machine simulator using Object-Oriented Programming concepts and C++. Processes hexadecimal instructions.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> C++, OOP</p>
+                    <a href="https://github.com/ranaehelal/MachineLanguageSimulator" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="Online Library Website">
+                <img src="images/projects/OnlineLibraryWebsite-thumbnail.PNG" alt="Online Library Website">
+                <div class="project-info">
+                    <h3>Online Library Website</h3>
+                    <p class="proj-date">Mar 2024</p>
+                    <p>Developed an interactive online library that allows users to search for books, return, and borrow books in real-time. Built using HTML, CSS, JavaScript, Django, and AJAX for dynamic content updates.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Django, AJAX</p>
+                    <ul>
+                        <li>Real-time book borrowing/returning with AJAX</li>
+                        <li>User authentication and role management (Admin/User)</li>
+                        <li>Responsive design for optimal viewing on all devices</li>
+                    </ul>
+                    <a href="https://github.com/ranaehelal/web_project" target="_blank">View Code</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-        <div class="contact-info">
-            <img src="images/social-media-logos/gmail-logo.png" alt="Gmail Icon" class="contact-icon">
-            <p>Email: <a href="mailto:ranaesmailhelal@gmail.com">ranaesmailhelal@gmail.com</a></p>
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="images/social-media-logos/gmail-logo.png" alt="Gmail Icon" class="contact-icon">
+                <p>Email: <a href="mailto:ranaesmailhelal@gmail.com">ranaesmailhelal@gmail.com</a></p>
+            </div>
+            <div class="contact-info">
+                <img src="images/social-media-logos/github-logo.png" alt="GitHub Icon" class="contact-icon">
+                <p>GitHub: <a href="https://github.com/ranaehelal" target="_blank">Rana Helal</a></p>
+            </div>
+            <div class="contact-info">
+                <img src="images/social-media-logos/linkedin-logo.png" alt="LinkedIn Icon" class="contact-icon">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/rana-helal-23b014262/" target="_blank">Rana Helal</a>
+                </p>
+            </div>
+            <div class="contact-info">
+                <img src="images/social-media-logos/stack-overflow-logo.png" alt="Stack Overflow Icon"
+                    class="contact-icon">
+                <p>Stack Overflow: <a href="https://stackoverflow.com/users/20450409/rana-e-helal?tab=profile"
+                        target="_blank">Rana Helal</a></p>
+            </div>
         </div>
-        <div class="contact-info">
-            <img src="images/social-media-logos/github-logo.png" alt="GitHub Icon" class="contact-icon">
-            <p>GitHub: <a href="https://github.com/ranaehelal" target="_blank">Rana Helal</a></p>
-        </div>
-        <div class="contact-info">
-            <img src="images/social-media-logos/linkedin-logo.png" alt="LinkedIn Icon" class="contact-icon">
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/rana-helal-23b014262/" target="_blank">Rana Helal</a></p>
-        </div>
-        <div class="contact-info">
-            <img src="images/social-media-logos/stack-overflow-logo.png" alt="Stack Overflow Icon" class="contact-icon">
-            <p>Stack Overflow: <a href="https://stackoverflow.com/users/20450409/rana-e-helal?tab=profile" target="_blank">Rana Helal</a></p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <footer>
-        <p>&copy; 2024 Rana Esmail. All rights reserved.</p>
+        <p>&copy; 2024 Rana Helal. All rights reserved.</p>
     </footer>
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
